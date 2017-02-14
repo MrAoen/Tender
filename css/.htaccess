@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule all.min.css all.min.php [L]
+RewriteRule editor.min.css all.min.php?editor=yes [L]

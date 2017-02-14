@@ -1,0 +1,46 @@
+body {
+    background: #fff;
+    text-align: left;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+li {
+    padding-left: 50px;
+    background-position: 37px 5px;
+}
+
+.home p {
+    margin: 0 25px 12px 26px;
+}
+
+/* Editor { */
+.cke_panel_list li {
+    padding-left: 0;
+    background: none;
+}
+
+/* Editor } */
+
+.img {
+    padding-right: 10px;
+}
+
+.img-large {
+    padding-right: 10px;
+}
+
+.form-list .alert {
+    display: block;
+}
+
+#gmap {
+    margin-right: 10px;
+}
+
+.olympiad-wrapper {
+    display: block;
+}

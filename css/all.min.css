@@ -1,0 +1,559 @@
+@font-face {
+	font-family: HeliosCondCB;
+	src: url(/css/HeliosCondC-Bold.otf);
+}
+
+ul, ol, li, dl, dt, dd, p, div, span, h1, h2, h3, h4, h5, h6, hr, form, fieldset, a, img, th, td, acronym, strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
+	background: #ebe3d4;
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, Trebuchet MS;
+	color: #000;
+}
+
+a {
+	color: #105f97;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover {
+	color: #000;
+}
+table {
+	margin: 0 25px 12px 25px;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+td,
+th {
+	border: 1px solid #eaeaea;
+	padding: 6px 20px;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 12px;
+	line-height: 15px;
+	color: #000;
+}
+th {
+	border-color: #e0e0e0;
+	font-weight: bold;
+	color: #224191;
+}
+th.v-top,
+td.v-top {
+	vertical-align: top;
+}
+th.v-bottom,
+td.v-bottom {
+	vertical-align: bottom;
+}
+th.h-center,
+td.h-center {
+	text-align: center;
+}
+th.h-right,
+td.h-right {
+	text-align: right;
+}
+select, input, textarea {
+	margin: 0;
+	vertical-align: middle;
+	font: 12px Tahoma, Verdana, Arial, Helvetica, Trebuchet MS;
+	color: #000;
+}
+
+.logged-in .logout-only,
+.logged-out .login-only {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 25px 25px 12px 25px;
+	text-align: left;
+	font: bold 15px Verdana, Tahoma, Arial, Helvetica, Trebuchet MS;
+	line-height: 18px;
+	color: #565656;
+}
+h1 {
+	font: 32px HeliosCondCB, Impact, Tahoma, Verdana, Arial, Helvetica, Trebuchet MS;
+	line-height: 32px;
+	color: #224191;
+}
+p {
+	margin: 0 25px 12px 25px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 17px;
+	color: #000;
+}
+p.right {
+	text-align: right !important;
+}
+p.center {
+	text-align: center !important;
+}
+ul {
+	margin: 0 25px 12px 0;
+}
+ul ul {
+	margin: 0;
+}
+li {
+	margin: 0 0 3px 0;
+	padding: 0 0 0 90px;
+	background: url(/di/bull.png) 77px 8px no-repeat;
+	list-style: none;
+	text-align: left;
+	font-size: 15px;
+	line-height: 17px;
+	color: #353d40;
+}
+li li {
+	padding-left: 60px;
+	background-position: 47px 8px;
+}
+sup, sub {
+	font-size: 9px;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.hidden {
+	display: none;
+}
+.spacer {
+	display: block;
+	float: none;
+	clear: both;
+	overflow: hidden;
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.content-bg {
+	background: url(/di/bg.png) 50% 0 repeat-y;
+}
+.content-bottom {
+	background: url(/di/bottom.png) 50% 100% no-repeat;
+}
+.content-top {
+	background: url(/di/top.png) 50% 0 no-repeat;
+}
+.content {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 996px;
+	text-align: left;
+}
+#top {
+	position: relative;
+	overflow: hidden;
+	margin: 49px 0 0 0;
+	height: 116px;
+}
+.logo {
+	display: block;
+	position: absolute;
+	width: 498px;
+	height: 116px;
+	text-decoration: none;
+}
+.localtime {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #888;
+}
+
+.login {
+	overflow: hidden;
+	margin: 0 0 0 783px;
+}
+#top .loading {
+	background: url(/di/loader2.gif) 167px 60px no-repeat;
+}
+.login h4,
+.login p {
+	margin: 16px 0 5px 0;
+	font-size: 11px;
+	line-height: 13px;
+	white-space: nowrap;
+	color: #fff;
+}
+.login p {
+	margin: 7px 0 0 0;
+}
+.login div {
+	margin: 0 0 0 1px;
+}
+.login .email {
+	margin-bottom: 7px;
+}
+.login input {
+	display: inline-block;
+	border: 0;
+}
+.login .text {
+	padding: 2px;
+	width: 165px;
+	max-width: 161px;
+	height: 21px;
+	max-height: 17px;
+	font: 11px Verdana, Tahoma, Arial, Helvetica, Trebuchet MS;
+	color: #224191;
+}
+.ie6 .login .text {
+	height: 17px;
+}
+.login .submit {
+	margin-left: 4px;
+	padding: 0;
+	background: url(/di/login.png) 0 0 no-repeat;
+	width: 18px;
+	height: 21px;
+	cursor: pointer;
+}
+#top .loading .submit {
+	display: none;
+}
+.login a {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	color: #fff;
+	text-decoration: none;
+}
+.login a:hover {
+	text-decoration: underline;
+}
+
+.menu {
+	overflow: hidden;
+	margin: 14px 0 0 783px;
+	text-align: right;
+	font: 18px HeliosCondCB, Impact, Tahoma, Verdana, Arial, Helvetica, Trebuchet MS;
+	line-height: 26px;
+}
+.menu a {
+	display: block;
+	margin: 0 18px 0 0;
+	white-space: nowrap;
+	color: #fff;
+	text-decoration: none;
+}
+.menu a:hover {
+	text-decoration: underline;
+}
+
+.form-list {
+	display: block;
+	margin: 0 auto 12px 0;
+	width: 790px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000;
+}
+.recover-form,
+.chpw-form {
+	display: block;
+	margin: 0 auto 12px auto;
+	width: 740px;
+}
+.form-list .text input,
+.form-list .turing input {
+	width: 146px;
+	height: 21px;
+	max-height: 25px;
+	border: 1px solid #d0d0d0;
+	border-top-color: #a2a2a2;
+	border-bottom-color: #f0f0f0;
+	padding: 2px 3px 0 3px;
+	background: #fff;
+}
+.form-list .select select {
+	float: left;
+	width: 100px;
+	height: 25px;
+}
+.form-list .text,
+.form-list .select,
+.form-list .turing,
+.form-list .richtext,
+.form-list .checkbox,
+.form-list .alert {
+	position: relative;
+	clear: both;
+	padding: 10px 25px 0 32px;
+}
+.form-list .turing {
+	padding-top: 3px;
+}
+.reg-form .turing {
+	padding-top: 8px;
+}
+.form-list .checkbox {
+	padding-top: 6px;
+}
+.form-list .rules {
+	padding-top: 2px;
+}
+* html .form-list .text,
+* html .form-list .select,
+* html .form-list .turing,
+* html .form-list .richtext,
+* html .form-list .checkbox,
+* html .form-list .alert {
+	width: 100%;
+}
+.form-list .checkbox input {
+	display: inline-block;
+	position: relative;
+	margin: -1px 2px 0 0;
+}
+.ie .form-list .checkbox input {
+	margin: 0;
+	vertical-align: top;
+}
+.form-list p {
+	position: relative;
+	float: left;
+	text-indent: 0;
+	margin: 4px 10px 0 0;
+	width: 230px;
+	text-align: right;
+	line-height: 18px;
+}
+.recover-form p,
+.chpw-form p {
+	width: 130px;
+}
+.form-list .alert {
+	display: none;
+	padding: 1px 25px 0 240px;
+	font-weight: bold;
+	color: #224191;
+}
+.recover-form .alert,
+.chpw-form .alert {
+	padding-left: 140px;
+}
+.form-list .text input {
+	float: left;
+	width: 400px;
+}
+.form-list .checkbox .box {
+	float: left;
+	width: 430px;
+}
+.form-list .turing p {
+	margin-top: 27px;
+}
+.form-list .turing input {
+	float: left;
+	margin: 25px 6px 0 0;
+}
+.form-list .turing img {
+	float: left;
+	width: 160px;
+	height: 50px;
+}
+.form-list .turing a {
+	float: left;
+	margin: 33px 0 0 6px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.form-list .submit {
+	height: 45px;
+}
+.loading .submit {
+	background: url(/di/loader1.gif) 428px 19px no-repeat;
+}
+.recover .loading .submit {
+	background-position: 332px 19px;
+}
+.chpw .loading .submit {
+	background-position: 302px 19px;
+}
+.contacts .loading .submit {
+	background-position: 434px 19px;
+}
+.form-list .submit input {
+	float: left;
+	margin: 9px 25px 0 271px;
+	padding: 2px 10px;
+}
+.recover-form .submit input,
+.chpw-form .submit input {
+	margin-left: 171px;
+}
+.feedback-form .submit input {
+	width: 150px;
+}
+.form-list .status {
+	padding: 1px 25px 10px 271px;
+}
+.recover-form .status,
+.chpw-form .status {
+	padding-left: 170px;
+}
+* html .form-list .alert {
+	width: 100%;
+}
+.form-list .required {
+	font-weight: bold;
+	color: #224191;
+}
+
+.large-center {
+	margin-top: 22px;
+	text-align: center;
+	font: 24px HeliosCondCB, Impact, Tahoma, Verdana, Arial, Helvetica, Trebuchet MS;
+	line-height: 32px;
+	color: #224191;
+}
+.no-tenders {
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+.large-center a {
+	display: inline-block;
+	margin: 0 20px;
+	border-bottom: 1px dashed #224191;
+	color: #224191;
+	text-decoration: none;
+}
+.large-center a:hover {
+	border-bottom-style: solid;
+	color: #224191;
+}
+
+.tenders {
+	margin: 20px 25px 25px 25px;
+}
+.tenders td,
+.tenders th {
+	border-color: #fff;
+	padding: 5px 5px 6px 5px;
+	text-align: center;
+}
+.tenders th {
+	border-color: #0370a3;
+	background: #0370a3;
+	font-weight: normal;
+	color: #fff;
+}
+.tenders .odd td {
+	border-color: #f5efe5;
+	background: #f5efe5;
+}
+.tenders .complete td {
+	color: #999;
+}
+.tenders .won td {
+	border-color: #00b4ed;
+	background: #00b4ed;
+	color: #fff;
+}
+.tenders .left {
+	text-align: left;
+}
+.tenders .price input {
+	border: 1px solid #d0d0d0;
+	border-top-color: #a2a2a2;
+	border-bottom-color: #f0f0f0;
+	padding: 1px 2px 0 2px;
+	width: 45px;
+	max-width: 39px;
+	height: 24px;
+	max-height: 21px;
+	text-align: center;
+}
+.tenders span,
+.tenders a {
+	display: inline-block;
+	line-height: 24px;
+	vertical-align: middle;
+}
+.tenders .loader,
+.tenders a {
+	width: 22px;
+	height: 24px;
+	background: #0370a3 url(/di/ok.png) 0 0 no-repeat;
+	text-decoration: none;
+}
+.tenders .loader {
+	background: url(/di/loader3.gif) 50% 50% no-repeat;
+}
+.tenders a:hover {
+	background-position: 0 -24px;
+}
+.tenders i {
+	display: block;
+	font-style: normal;
+	white-space: nowrap;
+}
+.tenders b {
+	display: block;
+	margin: 5px 0 0 0;
+	border-top: 1px dotted #888;
+	padding: 3px 0 0 0;
+	font-weight: normal;
+}
+.tenders .won b {
+	border-color: #fff;
+}
+
+.legend span {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	line-height: 20px;
+}
+.legend .won {
+	padding: 0 4px;
+	background: #00b4ed;
+	color: #fff;
+}
+.legend .complete {
+	color: #999;
+}
+
+.copy {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	height: 71px;
+	max-height: 31px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #333;
+}
+.ie6 .copy {
+	height: 31px;
+}
+.copy .developer {
+	display: block;
+	float: right;
+}
+.copy a {
+	text-decoration: none;
+}
+.copy a:hover {
+	text-decoration: underline;
+}

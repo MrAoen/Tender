@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule all.min.js all.min.php [L]
